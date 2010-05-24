@@ -1,5 +1,5 @@
 category: Audio
-requires: libboost1.40 libgcc1 libQtCore4 libQtGui4 libstdc++6 libxmmsclient++3 libxmmsclient5
+requires: libgcc1 libQtCore4 libQtGui4 libstdc++6 libxmmsclient++4 libxmmsclient6
 sdesc: "XMMS2 client with classic WinAmp/XMMS look"
 ldesc: "A Qt4-based client for the XMMS2 music daemon with a classic
 WinAmp/XMMS appearance."

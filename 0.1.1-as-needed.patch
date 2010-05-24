@@ -1,0 +1,11 @@
+--- origsrc/promoe-0.1.1/src/src.pro
++++ src/promoe-0.1.1/src/src.pro
+@@ -7,7 +7,7 @@ load (../features/pkgconfig.prf)
+ !xmms2-client-cpp:error (Please install the xmms2 c++ client library)
+ 
+ COMPONENTS+=../lib/liblib.a
+-LIBS += $$COMPONENTS
++LIBS = $$COMPONENTS $$LIBS
+ PRE_TARGETDEPS = $$COMPONENTS
+ 
+ MOC_DIR     = .moc

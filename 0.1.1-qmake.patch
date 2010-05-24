@@ -1,0 +1,26 @@
+--- origsrc/promoe-0.1.1/promoe.pro	2010-02-21 13:31:06.000000000 -0600
++++ src/promoe-0.1.1/promoe.pro	2010-05-24 14:22:08.836994100 -0500
+@@ -6,10 +6,6 @@ include (config.pri)
+ 
+ message ( "Install prefix set to:" $$PREFIX )
+ 
+-binary.path = $$BINDIR
+-binary.files = promoe
+-
+-INSTALLS += binary
+ 
+ unix: {
+ manpages1.path = $$MANDIR/man1
+--- origsrc/promoe-0.1.0/src/src.pro	2009-08-24 17:43:09.000000000 -0500
++++ src/promoe-0.1.0/src/src.pro	2010-02-09 00:32:02.542849800 -0600
+@@ -17,7 +17,9 @@ UI_DIR      = .ui
+ include(src.pri)
+ 
+ TARGET = promoe
+-DESTDIR = $$PWD/..
++DESTDIR = ..
++target.path = $$BINDIR
++INSTALLS += target
+ 
+ ;RESOURCES += ../data/promoe.qrc
+ RESOURCES += ../data/Almond-blue.qrc
