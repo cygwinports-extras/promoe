@@ -1,0 +1,17 @@
+inherit qt4-qmake
+
+NAME="promoe"
+VERSION=0.1.1
+RELEASE=1
+CATEGORY="Audio"
+SUMMARY="XMMS2 client with classic WinAmp/XMMS look"
+DESCRIPTION="A Qt4-based client for the XMMS2 music daemon with a classic
+WinAmp/XMMS appearance."
+HOMEPAGE="http://xmms2.org/wiki/Client:Promoe"
+SRC_URI="http://home.in.tum.de/~frauendo/promoe-${VERSION}.tar.gz"
+PATCH_URI="
+	0.1.1-qmake.patch
+	0.1.1-as-needed.patch
+"
+
+CYGQMAKE4_ARGS="PREFIX=/usr"

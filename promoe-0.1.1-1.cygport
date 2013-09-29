@@ -1,9 +1,0 @@
-inherit qt4-qmake
-
-DESCRIPTION="Qt4 XMMS2 client with classic WinAmp/XMMS look"
-HOMEPAGE="http://xmms2.org/wiki/Client:Promoe"
-SRC_URI="http://home.in.tum.de/~frauendo/${P}.tar.gz"
-PATCH_URI="0.1.1-qmake.patch
-           0.1.1-as-needed.patch"
-
-CYGQMAKE4_ARGS="PREFIX=/usr"
